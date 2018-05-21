@@ -1,0 +1,36 @@
+import java.util.*;
+public class TreeSetDemo {
+	public static void main(String[] args) {
+	TreeSet ts=new TreeSet();
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Elements into the TreeSet");
+	for(int i=1;i<=5;i++)
+	{
+		int n=sc.nextInt();
+		ts.add(new Integer(n));
+	}
+System.out.println("Number of Elements : "+ts.size());
+System.out.println("First : "+ts.first());
+System.out.println("Last : "+ts.last());
+System.out.println("All Elements are ......");
+Iterator ie=ts.iterator();
+while(ie.hasNext())
+	System.out.println(ie.next());
+System.out.println("Enter Element to be Remove");
+int num=sc.nextInt();
+boolean b=ts.remove(new Integer(num));
+if(b==true) // if(b)
+{
+	System.out.println("Element Removed...");
+	System.out.println("After Removing The Elements of the TreeSet are ....");
+	ie=ts.iterator();
+	while(ie.hasNext())
+		System.out.println(ie.next());
+}
+else
+	System.out.println("Element Not Found");
+
+
+sc.close();
+	}
+}
