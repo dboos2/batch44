@@ -1,0 +1,18 @@
+May_Release math demo file
+
+public class MathDemo1 {
+	public static void main(String[] args) {
+
+		for(;;)
+		{
+		int n=(int) (100*Math.random());
+		System.out.println(n);
+		try {
+			Thread.sleep(500);// it suspends the execution by 500 milli seconds
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		}
+	}
+
+}
