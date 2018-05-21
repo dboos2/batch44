@@ -36,3 +36,43 @@ sc.close();
 }
 
 JDBC Connections needed to be installed
+
+May_Release Changes Needed to be added
+public class Pet {
+
+ String petName;
+ String petType;
+ int petAge;
+ 
+ public Pet(String petName,String petType,int petAge)
+ {
+  this.petName=petName;
+  this.petType=petType;
+  this.petAge=petAge;
+ }
+ public void setName(String petName)
+ {
+  this.petName=petName;
+ }
+ public void setAnimal(String petType)
+ {
+  this.petType=petType;
+ }
+  public void setAge(int petAge)
+ {
+  this.petAge=petAge;
+ }
+public String getName()
+ {
+  return this.petName;
+ }
+ public String getAnimal()
+ {
+  return this.petType;
+ }
+ public int getAge()
+ {
+  return this.petAge;
+ }
+}
+
